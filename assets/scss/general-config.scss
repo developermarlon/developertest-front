@@ -1,0 +1,24 @@
+.v-application {
+  background-color: var(--v-background-base) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: var(--v-primary-base);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 32px;
+  width: 10px;
+  background: var(--v-secondary-base);
+}
+
+body {
+  overflow: hidden
+}
+
+.v-text-field {
+  input {
+      color: rgba(0,0,0,.5) !important;
+  }
+}

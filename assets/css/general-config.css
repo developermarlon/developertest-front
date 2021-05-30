@@ -1,0 +1,23 @@
+* {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  user-select: none;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
