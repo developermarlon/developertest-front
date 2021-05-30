@@ -23,8 +23,8 @@ export default {
     middleware: ['unauthenticated'],
     data() {
         return {
-            email: 'developer.marlon.torres@gmail.com',
-            password: 'semeolvido123',
+            email: null,
+            password: null,
             typeInputPassword: true,
             disabledButton: false,
             alert: {
