@@ -16,7 +16,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Example. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quis dignissimos necessitatibus architecto porro similique explicabo consectetur qui' },
       { hid: 'theme-color', name: 'theme-color', content: '#6b7da1' },
-      { hid: 'og:url', property: 'og:url', content: "https://magician-school.netlify.app" },
+      { hid: 'og:url', property: 'og:url', content: "https://developer-test-front.netlify.app" },
       { hid: 'og:description', name: 'og:description', content: 'Example. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quis dignissimos necessitatibus architecto porro similique explicabo consectetur qui' },
       {hid: 'og:image', property: 'og:image', content: '/icon.png'},
     ],
