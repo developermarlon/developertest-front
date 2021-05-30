@@ -114,6 +114,16 @@ export default {
       dialogCloseSesion: false,
       links: [
         {
+          text: "Home",
+          span: "Go to home",
+          icon: {
+            name: "home",
+            color: "darken-1",
+          },
+          to: "/",
+          auth: false,
+        },
+        {
           icon: {
             name: "admin_panel_settings",
             color: "darken-2",

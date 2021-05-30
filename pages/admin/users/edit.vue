@@ -27,20 +27,6 @@
                         
                         v-btn(@click="updateUser" :loading="disabledButton" :disabled="disabledButton" color="secondary" rounded block x-large).font-family-raleway-bold.text-capitalize Update
         
-        //- DIALOG CONFIRM DELETE
-        v-dialog(v-model="dialogConfirmDelete" max-width="290")
-            v-card.rounded-xl
-                v-card-title.headline.primary.white--text.font-family-raleway-bold 
-                    v-btn(icon dark @click="dialogConfirmDelete = false" ).mr-2
-                        v-icon close
-                    div Confirm Delete
-                
-
-                v-card-text.font-family-raleway-bold.mt-5  {{`Confirm delete user ${user_delete.name} ??`}}
-
-                v-card-actions.d-flex.flex-column
-                    v-spacer
-                    v-btn.dark.font-family-raleway-bold.text-capitalize(color="secondary" block rounded @click="dialogConfirmDelete = false, confirmDelete()") Acept
 </template>
 
 <script>
@@ -60,7 +46,8 @@ export default {
                 value: false,
                 message: null
             },
-            disabledButton: false
+            disabledButton: false,
+            dialogConfirmDelete: false
         }
     },
     computed: {

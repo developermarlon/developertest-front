@@ -116,6 +116,11 @@ export default {
                 }
             } finally {
                 this.disabledButton = false
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                })
             }
         }
     }
