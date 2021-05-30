@@ -18,9 +18,9 @@
                                         v-icon(class="white--text") edit
                                         input(id="styleLable" type="file" v-on:change="onFileSelected" placeholder="Seleccione una foto")
 
-                        v-text-field(v-model="name" type="text" label="Name" placeholder="Enter your name" filled rounded append-icon="" hide-details).mb-4.font-family-raleway-medium
-                        v-text-field(v-model="email" type="email" label="Email" placeholder="Enter your email" filled rounded append-icon="email" hide-details).mb-4.font-family-raleway-medium
-                        v-text-field(v-model="password" :append-icon="typeInputPassword ? 'visibility_off' : 'visibility'" @click:append="() => (typeInputPassword = !typeInputPassword)" :type="typeInputPassword ? 'password' : 'text'" label="Password" placeholder="Enter your password" filled rounded hide-details).mb-4.font-family-raleway-medium
+                        v-text-field(v-model="name" v-on:keyup.enter="registerUser" type="text" label="Name" placeholder="Enter your name" filled rounded append-icon="" hide-details).mb-4.font-family-raleway-medium
+                        v-text-field(v-model="email" v-on:keyup.enter="registerUser" type="email" label="Email" placeholder="Enter your email" filled rounded append-icon="email" hide-details).mb-4.font-family-raleway-medium
+                        v-text-field(v-model="password" v-on:keyup.enter="registerUser" :append-icon="typeInputPassword ? 'visibility_off' : 'visibility'" @click:append="() => (typeInputPassword = !typeInputPassword)" :type="typeInputPassword ? 'password' : 'text'" label="Password" placeholder="Enter your password" filled rounded hide-details).mb-4.font-family-raleway-medium
                         
                         v-btn(@click="registerUser" :loading="disabledButton" :disabled="disabledButton" color="secondary" rounded block x-large).font-family-raleway-bold.text-capitalize Register
                         v-divider.my-2

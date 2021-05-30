@@ -7,8 +7,8 @@
                         h1.text--secondary.font-family-raleway-black.text-truncate.text-h4.text-center.mb-5 Login
                         v-alert(dismissible dark :color="colorAlert" v-model="alert.value").font-family-raleway-bold {{ alert.message }}
 
-                        v-text-field(v-model="email" type="email" label="Email" placeholder="Enter your email" filled rounded append-icon="email" hide-details).mb-4.font-family-raleway-medium
-                        v-text-field(v-model="password" :append-icon="typeInputPassword ? 'visibility_off' : 'visibility'" @click:append="() => (typeInputPassword = !typeInputPassword)" :type="typeInputPassword ? 'password' : 'text'" label="Password" placeholder="Enter your password" filled rounded hide-details).mb-4.font-family-raleway-medium
+                        v-text-field(v-model="email" v-on:keyup.enter="login" type="email" label="Email" placeholder="Enter your email" filled rounded append-icon="email" hide-details).mb-4.font-family-raleway-medium
+                        v-text-field(v-model="password" v-on:keyup.enter="login" :append-icon="typeInputPassword ? 'visibility_off' : 'visibility'" @click:append="() => (typeInputPassword = !typeInputPassword)" :type="typeInputPassword ? 'password' : 'text'" label="Password" placeholder="Enter your password" filled rounded hide-details).mb-4.font-family-raleway-medium
                         
                         v-btn(@click="login" :loading="disabledButton" :disabled="disabledButton" color="secondary" rounded block x-large).font-family-raleway-bold.text-capitalize Login
                         v-divider.my-2
